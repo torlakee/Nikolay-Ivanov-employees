@@ -1,0 +1,34 @@
+ 
+  .intro {
+    margin: 10px 10px 20px 10px;
+  }
+
+.view {
+    margin:50px auto;
+    display: grid;
+    place-items:  center center;
+    background-color: #F2F5FA;
+    width: 500px;
+    padding:10px;
+    border-radius: 16px;
+}
+
+.picker-button {
+    background-color: #2A2859;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius:16px;
+}
+
+.view.ready {
+        background-color: #2A2859;
+}
+
+.message {
+    margin-top: 20px;
+ 
+}
+
+.error-reason {
+    color: #a30000;
+}

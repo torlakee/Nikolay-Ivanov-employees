@@ -1,0 +1,27 @@
+<div class="view">
+  <div class="intro">Please select a CSV file containing employee data</div>
+  <label for="picker" class="picker-button">Choose File</label>
+  <input id="picker" type="file" (change)="onFileChanged($event)" hidden />
+
+  <div [innerHTML]="message" class="message"></div>
+
+<table *ngIf="results.length > 0">
+  <thead>
+    <tr>
+      <th>Employee #1</th>
+      <th>Employee #2</th>
+      <th>Project ID</th>
+      <th>Days Worked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of results">
+      <td>{{ r.emp1 }}</td>
+      <td>{{ r.emp2 }}</td>
+      <td>{{ r.projectId }}</td>
+      <td>{{ r.days }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
